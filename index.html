@@ -8,18 +8,18 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚔️</text></svg>">
 <style>
   :root {
-    --bg: #0a0a12;
-    --panel: #12121f;
-    --neon-blue: #4dc9ff;
-    --neon-yellow: #ffd24d;
-    --neon-red: #ff4d6a;
-    --text: #e8e8f0;
-    --dim: #8a8aa0;
+    --bg: #0e0a14;
+    --panel: #17111f;
+    --orange: #ff8c3c;
+    --orange-hot: #f97316;
+    --purple: #a855f7;
+    --text: #ede8f0;
+    --dim: #948aa0;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     background: var(--bg);
-    background-image: radial-gradient(ellipse at 50% -20%, rgba(77, 201, 255, 0.12), transparent 60%);
+    background-image: radial-gradient(ellipse at 50% -20%, rgba(168, 85, 247, 0.16), transparent 60%), radial-gradient(ellipse at 50% 120%, rgba(249, 115, 22, 0.10), transparent 55%);
     color: var(--text);
     font-family: 'Segoe UI', system-ui, sans-serif;
     min-height: 100vh;
@@ -33,37 +33,24 @@
     height: 132px;
     border-radius: 50%;
     margin-bottom: 18px;
-    border: 2px solid rgba(255, 210, 77, 0.55);
-    box-shadow: 0 0 24px rgba(255, 140, 60, 0.35), 0 0 48px rgba(120, 60, 200, 0.25);
+    border: 2px solid rgba(255, 140, 60, 0.6);
+    box-shadow: 0 0 24px rgba(249, 115, 22, 0.35), 0 0 48px rgba(168, 85, 247, 0.3);
   }
   h1 {
     font-size: 1.6rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--neon-yellow);
-    text-shadow: 0 0 18px rgba(255, 210, 77, 0.35);
+    color: var(--orange);
+    text-shadow: 0 0 18px rgba(249, 115, 22, 0.4);
   }
   .tagline { color: var(--dim); margin: 10px 0 6px; font-size: 0.95rem; line-height: 1.5; }
-  .game {
-    display: inline-block;
-    margin: 14px 0 28px;
-    padding: 6px 18px;
-    border: 1px solid var(--neon-red);
-    border-radius: 999px;
-    color: var(--neon-red);
-    font-weight: 600;
-    letter-spacing: 0.22em;
-    font-size: 0.85rem;
-    text-shadow: 0 0 12px rgba(255, 77, 106, 0.5);
-    box-shadow: 0 0 14px rgba(255, 77, 106, 0.15) inset, 0 0 14px rgba(255, 77, 106, 0.12);
-  }
   .links { display: flex; flex-direction: column; gap: 12px; }
   .links a {
     display: flex;
     align-items: center;
     gap: 14px;
     background: var(--panel);
-    border: 1px solid rgba(77, 201, 255, 0.25);
+    border: 1px solid rgba(168, 85, 247, 0.3);
     border-radius: 12px;
     padding: 14px 18px;
     color: var(--text);
@@ -72,15 +59,15 @@
     transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
   }
   .links a:hover {
-    border-color: var(--neon-blue);
-    box-shadow: 0 0 16px rgba(77, 201, 255, 0.25);
+    border-color: var(--purple);
+    box-shadow: 0 0 16px rgba(168, 85, 247, 0.3);
     transform: translateY(-1px);
   }
   .links a.primary {
-    border-color: var(--neon-yellow);
-    box-shadow: 0 0 14px rgba(255, 210, 77, 0.15);
+    border-color: var(--orange-hot);
+    box-shadow: 0 0 14px rgba(249, 115, 22, 0.2);
   }
-  .links a.primary:hover { box-shadow: 0 0 20px rgba(255, 210, 77, 0.35); }
+  .links a.primary:hover { border-color: var(--orange); box-shadow: 0 0 20px rgba(249, 115, 22, 0.4); }
   .links a .icon { font-size: 1.25rem; width: 28px; text-align: center; flex-shrink: 0; }
   .links a .label { flex: 1; text-align: left; }
   .links a .sub { display: block; color: var(--dim); font-size: 0.78rem; margin-top: 2px; }
@@ -148,7 +135,7 @@
       </div>
     </nav>
 
-    <footer>Contact: <a href="mailto:goldenstonegames@gmail.com" style="color: var(--neon-blue); text-decoration: none;">goldenstonegames@gmail.com</a><br>© 2026 Goldenstone Games</footer>
+    <footer>Contact: <a href="mailto:goldenstonegames@gmail.com" style="color: var(--orange); text-decoration: none;">goldenstonegames@gmail.com</a><br>© 2026 Goldenstone Games</footer>
   </main>
 </body>
 </html>
